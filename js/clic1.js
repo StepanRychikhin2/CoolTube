@@ -29,6 +29,8 @@ function reset() {
 function toTeslaButtonClick() {
     cliclBank += 1;
     spanCrete.textContent = cliclBank;
+    
+
 }
 
 function toTeslaButtonUpdeteClick() {
@@ -43,6 +45,9 @@ function toTeslaButtonUpdeteClick() {
     alert(`Вам не вичтачає ${10 - cliclBank} $`);
   }
 
+  // &&  Teslaimg.src === "./img/TeslaUpdete1.jpg"
+
+ 
 
 }
 
