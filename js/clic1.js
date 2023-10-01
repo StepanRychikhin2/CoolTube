@@ -1,6 +1,7 @@
 const sectElement = document.createElement("section");
 const spanCrete = document.createElement("span");
 const TeslaButton = document.querySelector("[data-Teslabutton]");
+const TeslaButtonUpdete = document.querySelector("[data-Teslabutton2]");
 const Teslaimg = document.querySelector("[data-Teslaimg]");
 let cliclBank = 0;
 spanCrete.textContent = cliclBank;
@@ -16,8 +17,8 @@ spanCrete.classList = "Tesla-span";
 console.log(TeslaButton)
 console.log(Teslaimg)
 
-TeslaButton.addEventListener("click", incrementKeypressCounter);
-
+TeslaButton.addEventListener("click", toTeslaButtonClick);
+TeslaButtonUpdete.addEventListener("click", toTeslaButtonUpdeteClick);
 
 
 function reset() {
@@ -25,18 +26,35 @@ function reset() {
   Teslaimg.innerHTML = "";
 }
 
-function incrementKeypressCounter() {
+function toTeslaButtonClick() {
     cliclBank += 1;
-    console.log("aaa");
-    console.log(cliclBank);
     spanCrete.textContent = cliclBank;
 }
 
+function toTeslaButtonUpdeteClick() {
 
-// TeslaButton.addEventListener("click", () => {
-//     cliclBank =+  1;
-//     console.log("rrr");
-//     console.log(cliclBank);
-//     spanCrete.textContent = cliclBank;
-// });
-// console.log(cliclBank);
+  if (cliclBank >= 10) {
+    cliclBank -= 10;
+  console.log("eee");
+  spanCrete.textContent = cliclBank;
+  console.log(cliclBank);
+  Teslaimg.src = "./img/TeslaUpdete1.jpg";
+  } else {
+    alert(`Вам не вичтачає ${10 - cliclBank} $`);
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
