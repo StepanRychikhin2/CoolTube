@@ -2,7 +2,7 @@ const sectElement = document.createElement("section");
 const spanCrete = document.createElement("span");
 const TeslaButton = document.querySelector("[data-Teslabutton]");
 const Teslaimg = document.querySelector("[data-Teslaimg]");
-let cliclBank = 1;
+let cliclBank = 0;
 spanCrete.textContent = cliclBank;
 
 
@@ -29,12 +29,14 @@ function incrementKeypressCounter() {
     cliclBank += 1;
     console.log("aaa");
     console.log(cliclBank);
+    spanCrete.textContent = cliclBank;
 }
 
 
-TeslaButton.addEventListener("click", () => {
-    cliclBank =+  1;
-    console.log("rrr");
-    console.log(cliclBank);
-});
-console.log(cliclBank);
+// TeslaButton.addEventListener("click", () => {
+//     cliclBank =+  1;
+//     console.log("rrr");
+//     console.log(cliclBank);
+//     spanCrete.textContent = cliclBank;
+// });
+// console.log(cliclBank);
