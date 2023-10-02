@@ -42,7 +42,7 @@ function toTeslaButtonUpdeteClick() {
   console.log(cliclBank);
   Teslaimg.src = "./img/TeslaUpdete1.jpg";
   } else {
-    alert(`Вам не вичтачає ${10 - cliclBank} $`);
+    alert(`Вам не вистачає ${10 - cliclBank} $`);
   }
 
   // &&  Teslaimg.src === "./img/TeslaUpdete1.jpg"
