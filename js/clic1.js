@@ -41,10 +41,13 @@ function toTeslaButtonUpdeteClick() {
   spanCrete.textContent = cliclBank;
   console.log(cliclBank);
   Teslaimg.src = "./img/TeslaUpdete1.jpg";
-  } else {
+  } else if (cliclBank < 10) {
     alert(`Вам не вистачає ${10 - cliclBank} $`);
+  } else {
+    console.log("erwv");
   }
 
+  
   // &&  Teslaimg.src === "./img/TeslaUpdete1.jpg"
 
  
