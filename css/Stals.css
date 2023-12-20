@@ -3,20 +3,42 @@
 }
 
 .Tesla-button{
+    display: block;
     justify-content: center;
     padding:  10px;
     margin-left: 490px;
     margin-right: 200px;
-    margin-top: 100px;
+    
 }
 
 
 
 .Tesla-span{
+   
     margin-left: 595px;
-    margin-top: 500px;
+   
     color: rgb(0, 0, 0);
     font-size: 30px;
     line-height: 40px;
     justify-content: center;
+}
+
+.noSellUpd{
+background-color: rgb(22, 228, 22);
+}
+
+.yesSellUpd{
+    background-color: rgb(255, 0, 0);
+}
+
+.div-conteiner{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text{
+    font-size: 50px;
+    margin-top: 50px;
 }
