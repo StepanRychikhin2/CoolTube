@@ -4,6 +4,10 @@ const TeslaButton = document.querySelector("[data-Teslabutton]");
 const TeslaButtonUpdete = document.querySelector("[data-Teslabutton2]");
 const Teslaimg = document.querySelector("[data-Teslaimg]");
 const titleText = document.querySelector("[data-textTitle]");
+const btnUpdShopOpen = document.querySelector("[data-TeslabuttonUpd]");
+const menuUpd = document.querySelector("[data-menuUpd]");
+
+
 let cliclBank = 0;
 let numberClick = 1;
 spanCrete.textContent = cliclBank;
@@ -41,10 +45,10 @@ function toTeslaButtonClick() {
 function toTeslaButtonUpdeteClick() {
 
   if (cliclBank >= 10 && levl < 3) {
-    TeslaButtonUpdete.classList.remove("noSellUpd")
-    TeslaButtonUpdete.classList.add("yesSellUpd")
+    TeslaButtonUpdete.classList.remove("noSellUpd");
+    TeslaButtonUpdete.classList.add("yesSellUpd");
 
-    TeslaButtonUpdete.textContent = "Куплено"
+    TeslaButtonUpdete.textContent = "Куплено";
 
     levl += 5;
     cliclBank -= 10;
@@ -53,10 +57,10 @@ function toTeslaButtonUpdeteClick() {
   Teslaimg.src = "./img/TeslaUpdete1.jpg";
 
   } else if (cliclBank < 10 && levl < 3) {
-    titleText.textContent = `Вам не вистачає ${10 - cliclBank} $`
+    titleText.textContent = `Вам не вистачає ${10 - cliclBank} $`;
 
   } else if (levl > 3) {
-    titleText.textContent = `Ви вже купили цей абгрейт`
+    titleText.textContent = `Ви вже купили цей абгрейт`;
 
 
   } else {
@@ -64,13 +68,12 @@ function toTeslaButtonUpdeteClick() {
   }
 
   
-  // &&  Teslaimg.src === "./img/TeslaUpdete1.jpg"
-
- 
-
 }
 
+btnUpdShopOpen.addEventListener("click", () => {
+  menuUpd.classList.remove("on");
 
+})
 
 
 

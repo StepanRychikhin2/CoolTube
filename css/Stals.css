@@ -39,6 +39,20 @@ background-color: rgb(22, 228, 22);
 }
 
 .title-text{
+    display: block;
     font-size: 50px;
     margin-top: 50px;
+}
+.menu-apd{
+    margin-left: 200px;
+    margin-top: 40px;
+    
+    
+    background-color: blueviolet;
+    width: 100px;
+    height: 400px;
+}
+
+.on{
+    display: none;
 }
